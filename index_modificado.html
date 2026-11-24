@@ -260,7 +260,7 @@
     <header>
       <h1>De la recta secante a la recta tangente</h1>
       <p class="intro">
-        Explora cómo cambia la pendiente de una recta secante cuando acercamos dos puntos de una curva. Mantén fijo el punto P y modifica la distancia Δx para observar qué sucede.
+        Explora cómo cambia la pendiente de una recta secante cuando acercamos dos puntos de una curva. Mantén fijo el punto P y modifica la distancia h para observar qué sucede.
       </p>
     </header>
 
@@ -298,7 +298,7 @@
           <span>4.95</span>
         </div>
 
-        <label for="h">Distancia entre P y Q (Δx)</label>
+        <label for="h">Distancia entre P y Q (h)</label>
         <input id="h" type="range" min="0.05" max="4" step="0.05" value="1">
 
         <div class="range-line">
@@ -308,7 +308,7 @@
         </div>
 
         <p class="hint">
-          P permanece fijo mientras Q se desplaza al cambiar Δx. Los puntos no llegan a coincidir.
+          P permanece fijo mientras Q se desplaza al cambiar h. Los puntos no llegan a coincidir.
         </p>
 
         <div class="toggle-row">
@@ -330,7 +330,7 @@
           </div>
 
           <div class="metric">
-            <div class="name">Q = (a + Δx, f(a + Δx))</div>
+            <div class="name">Q = (a + h, f(a + h))</div>
             <div class="number" id="qMetric">—</div>
           </div>
 
@@ -346,7 +346,7 @@
         </div>
 
         <div class="explanation" id="explanation">
-          <strong>Explora:</strong> reduce progresivamente Δx. ¿La pendiente de la secante parece aproximarse a un valor? Compara ese valor con la pendiente de la tangente aproximada.
+          <strong>Explora:</strong> reduce progresivamente h. ¿La pendiente de la secante parece aproximarse a un valor? Compara ese valor con la pendiente de la tangente aproximada.
         </div>
 
       </section>
@@ -608,8 +608,8 @@
         showTangent ? mTan.toFixed(6) : "—";
 
       $("explanation").innerHTML = showTangent
-        ? "<strong>Explora:</strong> reduce progresivamente Δx. ¿La pendiente de la secante parece aproximarse a un valor? Compara ese valor con la pendiente de la tangente aproximada."
-        : "<strong>Explora:</strong> reduce progresivamente Δx y observa cómo cambia la pendiente de la recta secante. La recta tangente y su cálculo aproximado están ocultos.";
+        ? "<strong>Explora:</strong> reduce progresivamente h. ¿La pendiente de la secante parece aproximarse a un valor? Compara ese valor con la pendiente de la tangente aproximada."
+        : "<strong>Explora:</strong> reduce progresivamente h y observa cómo cambia la pendiente de la recta secante. La recta tangente y su cálculo aproximado están ocultos.";
 
       $("error").style.display = "none";
 
